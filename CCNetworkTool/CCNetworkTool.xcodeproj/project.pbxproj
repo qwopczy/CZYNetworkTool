@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3AD6271D6F91CFE8F0B28BE /* Pods_CCNetworkTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16786E886FA7D3FA0CAB036D /* Pods_CCNetworkTool.framework */; };
+		B1CD59D2948937197CEE6D2C /* Pods_CCNetworkToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564189225018BF5C4E22914A /* Pods_CCNetworkToolTests.framework */; };
+		DF508DD95D80F6C3E88D03E5 /* Pods_CCNetworkTool_CCNetworkToolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FCD2C1E65CA08D38E5A3AE /* Pods_CCNetworkTool_CCNetworkToolUITests.framework */; };
+		E54919592473A3B50095AD79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54919582473A3B50095AD79 /* AppDelegate.swift */; };
+		E549195B2473A3B50095AD79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549195A2473A3B50095AD79 /* SceneDelegate.swift */; };
+		E549195D2473A3B50095AD79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549195C2473A3B50095AD79 /* ViewController.swift */; };
+		E54919602473A3B50095AD79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E549195E2473A3B50095AD79 /* Main.storyboard */; };
+		E54919622473A3B80095AD79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E54919612473A3B80095AD79 /* Assets.xcassets */; };
+		E54919652473A3B80095AD79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54919632473A3B80095AD79 /* LaunchScreen.storyboard */; };
+		E54919702473A3B90095AD79 /* CCNetworkToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549196F2473A3B80095AD79 /* CCNetworkToolTests.swift */; };
+		E549197B2473A3B90095AD79 /* CCNetworkToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549197A2473A3B90095AD79 /* CCNetworkToolUITests.swift */; };
+		E54919AB2473C03C0095AD79 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54919A82473C03C0095AD79 /* NetworkManager.swift */; };
+		E54919AC2473C03C0095AD79 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54919A92473C03C0095AD79 /* API.swift */; };
+		E54919AD2473C03C0095AD79 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54919AA2473C03C0095AD79 /* MoyaConfig.swift */; };
+		E54919AF2473C7060095AD79 /* UITableView+initialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54919AE2473C7060095AD79 /* UITableView+initialize.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E549196C2473A3B80095AD79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E549194D2473A3B50095AD79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E54919542473A3B50095AD79;
+			remoteInfo = CCNetworkTool;
+		};
+		E54919772473A3B90095AD79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E549194D2473A3B50095AD79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E54919542473A3B50095AD79;
+			remoteInfo = CCNetworkTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BFD493B422365119DA84624 /* Pods-CCNetworkTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNetworkTool.debug.xcconfig"; path = "Target Support Files/Pods-CCNetworkTool/Pods-CCNetworkTool.debug.xcconfig"; sourceTree = "<group>"; };
+		16786E886FA7D3FA0CAB036D /* Pods_CCNetworkTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNetworkTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		564189225018BF5C4E22914A /* Pods_CCNetworkToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNetworkToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE5A7A73E77A4D2A5C31855 /* Pods-CCNetworkToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNetworkToolTests.release.xcconfig"; path = "Target Support Files/Pods-CCNetworkToolTests/Pods-CCNetworkToolTests.release.xcconfig"; sourceTree = "<group>"; };
+		8ED69BE1461E814770CA7122 /* Pods-CCNetworkTool-CCNetworkToolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNetworkTool-CCNetworkToolUITests.debug.xcconfig"; path = "Target Support Files/Pods-CCNetworkTool-CCNetworkToolUITests/Pods-CCNetworkTool-CCNetworkToolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		93C005DF9A7F4FED08329B6C /* Pods-CCNetworkToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNetworkToolTests.debug.xcconfig"; path = "Target Support Files/Pods-CCNetworkToolTests/Pods-CCNetworkToolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5FCD2C1E65CA08D38E5A3AE /* Pods_CCNetworkTool_CCNetworkToolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCNetworkTool_CCNetworkToolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54919552473A3B50095AD79 /* CCNetworkTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCNetworkTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54919582473A3B50095AD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E549195A2473A3B50095AD79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E549195C2473A3B50095AD79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E549195F2473A3B50095AD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E54919612473A3B80095AD79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E54919642473A3B80095AD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E54919662473A3B80095AD79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E549196B2473A3B80095AD79 /* CCNetworkToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCNetworkToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E549196F2473A3B80095AD79 /* CCNetworkToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCNetworkToolTests.swift; sourceTree = "<group>"; };
+		E54919712473A3B90095AD79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E54919762473A3B90095AD79 /* CCNetworkToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCNetworkToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E549197A2473A3B90095AD79 /* CCNetworkToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCNetworkToolUITests.swift; sourceTree = "<group>"; };
+		E549197C2473A3B90095AD79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E54919A82473C03C0095AD79 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E54919A92473C03C0095AD79 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E54919AA2473C03C0095AD79 /* MoyaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
+		E54919AE2473C7060095AD79 /* UITableView+initialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+initialize.swift"; sourceTree = "<group>"; };
+		F47AE8CE28754C937E6C5EAB /* Pods-CCNetworkTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNetworkTool.release.xcconfig"; path = "Target Support Files/Pods-CCNetworkTool/Pods-CCNetworkTool.release.xcconfig"; sourceTree = "<group>"; };
+		F9E1402502C73CEDED0F954A /* Pods-CCNetworkTool-CCNetworkToolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCNetworkTool-CCNetworkToolUITests.release.xcconfig"; path = "Target Support Files/Pods-CCNetworkTool-CCNetworkToolUITests/Pods-CCNetworkTool-CCNetworkToolUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E54919522473A3B50095AD79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3AD6271D6F91CFE8F0B28BE /* Pods_CCNetworkTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54919682473A3B80095AD79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CD59D2948937197CEE6D2C /* Pods_CCNetworkToolTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54919732473A3B90095AD79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF508DD95D80F6C3E88D03E5 /* Pods_CCNetworkTool_CCNetworkToolUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BA59670CDFD22CC969D4F49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16786E886FA7D3FA0CAB036D /* Pods_CCNetworkTool.framework */,
+				A5FCD2C1E65CA08D38E5A3AE /* Pods_CCNetworkTool_CCNetworkToolUITests.framework */,
+				564189225018BF5C4E22914A /* Pods_CCNetworkToolTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B31C7D34021571C5B74969A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD493B422365119DA84624 /* Pods-CCNetworkTool.debug.xcconfig */,
+				F47AE8CE28754C937E6C5EAB /* Pods-CCNetworkTool.release.xcconfig */,
+				8ED69BE1461E814770CA7122 /* Pods-CCNetworkTool-CCNetworkToolUITests.debug.xcconfig */,
+				F9E1402502C73CEDED0F954A /* Pods-CCNetworkTool-CCNetworkToolUITests.release.xcconfig */,
+				93C005DF9A7F4FED08329B6C /* Pods-CCNetworkToolTests.debug.xcconfig */,
+				6AE5A7A73E77A4D2A5C31855 /* Pods-CCNetworkToolTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E549194C2473A3B50095AD79 = {
+			isa = PBXGroup;
+			children = (
+				E54919572473A3B50095AD79 /* CCNetworkTool */,
+				E549196E2473A3B80095AD79 /* CCNetworkToolTests */,
+				E54919792473A3B90095AD79 /* CCNetworkToolUITests */,
+				E54919562473A3B50095AD79 /* Products */,
+				8B31C7D34021571C5B74969A /* Pods */,
+				2BA59670CDFD22CC969D4F49 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E54919562473A3B50095AD79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E54919552473A3B50095AD79 /* CCNetworkTool.app */,
+				E549196B2473A3B80095AD79 /* CCNetworkToolTests.xctest */,
+				E54919762473A3B90095AD79 /* CCNetworkToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E54919572473A3B50095AD79 /* CCNetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				E54919AE2473C7060095AD79 /* UITableView+initialize.swift */,
+				E549198E2473B7B20095AD79 /* HttpTool */,
+				E54919582473A3B50095AD79 /* AppDelegate.swift */,
+				E549195A2473A3B50095AD79 /* SceneDelegate.swift */,
+				E549195C2473A3B50095AD79 /* ViewController.swift */,
+				E549195E2473A3B50095AD79 /* Main.storyboard */,
+				E54919612473A3B80095AD79 /* Assets.xcassets */,
+				E54919632473A3B80095AD79 /* LaunchScreen.storyboard */,
+				E54919662473A3B80095AD79 /* Info.plist */,
+			);
+			path = CCNetworkTool;
+			sourceTree = "<group>";
+		};
+		E549196E2473A3B80095AD79 /* CCNetworkToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				E549196F2473A3B80095AD79 /* CCNetworkToolTests.swift */,
+				E54919712473A3B90095AD79 /* Info.plist */,
+			);
+			path = CCNetworkToolTests;
+			sourceTree = "<group>";
+		};
+		E54919792473A3B90095AD79 /* CCNetworkToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E549197A2473A3B90095AD79 /* CCNetworkToolUITests.swift */,
+				E549197C2473A3B90095AD79 /* Info.plist */,
+			);
+			path = CCNetworkToolUITests;
+			sourceTree = "<group>";
+		};
+		E549198E2473B7B20095AD79 /* HttpTool */ = {
+			isa = PBXGroup;
+			children = (
+				E54919A92473C03C0095AD79 /* API.swift */,
+				E54919AA2473C03C0095AD79 /* MoyaConfig.swift */,
+				E54919A82473C03C0095AD79 /* NetworkManager.swift */,
+			);
+			path = HttpTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E54919542473A3B50095AD79 /* CCNetworkTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E549197F2473A3B90095AD79 /* Build configuration list for PBXNativeTarget "CCNetworkTool" */;
+			buildPhases = (
+				2AD527678CB8710C916BAF88 /* [CP] Check Pods Manifest.lock */,
+				E54919512473A3B50095AD79 /* Sources */,
+				E54919522473A3B50095AD79 /* Frameworks */,
+				E54919532473A3B50095AD79 /* Resources */,
+				BB3FB89FB82F7D03CD143D49 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCNetworkTool;
+			productName = CCNetworkTool;
+			productReference = E54919552473A3B50095AD79 /* CCNetworkTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E549196A2473A3B80095AD79 /* CCNetworkToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E54919822473A3B90095AD79 /* Build configuration list for PBXNativeTarget "CCNetworkToolTests" */;
+			buildPhases = (
+				7786C773E046F8C4C50AC2A5 /* [CP] Check Pods Manifest.lock */,
+				E54919672473A3B80095AD79 /* Sources */,
+				E54919682473A3B80095AD79 /* Frameworks */,
+				E54919692473A3B80095AD79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E549196D2473A3B80095AD79 /* PBXTargetDependency */,
+			);
+			name = CCNetworkToolTests;
+			productName = CCNetworkToolTests;
+			productReference = E549196B2473A3B80095AD79 /* CCNetworkToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E54919752473A3B90095AD79 /* CCNetworkToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E54919852473A3B90095AD79 /* Build configuration list for PBXNativeTarget "CCNetworkToolUITests" */;
+			buildPhases = (
+				45D9B30E20B2D5C9A40DF6FA /* [CP] Check Pods Manifest.lock */,
+				E54919722473A3B90095AD79 /* Sources */,
+				E54919732473A3B90095AD79 /* Frameworks */,
+				E54919742473A3B90095AD79 /* Resources */,
+				A47FAAFB0356FB611FDA4909 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E54919782473A3B90095AD79 /* PBXTargetDependency */,
+			);
+			name = CCNetworkToolUITests;
+			productName = CCNetworkToolUITests;
+			productReference = E54919762473A3B90095AD79 /* CCNetworkToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E549194D2473A3B50095AD79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = chenyi;
+				TargetAttributes = {
+					E54919542473A3B50095AD79 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					E549196A2473A3B80095AD79 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = E54919542473A3B50095AD79;
+					};
+					E54919752473A3B90095AD79 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = E54919542473A3B50095AD79;
+					};
+				};
+			};
+			buildConfigurationList = E54919502473A3B50095AD79 /* Build configuration list for PBXProject "CCNetworkTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E549194C2473A3B50095AD79;
+			productRefGroup = E54919562473A3B50095AD79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E54919542473A3B50095AD79 /* CCNetworkTool */,
+				E549196A2473A3B80095AD79 /* CCNetworkToolTests */,
+				E54919752473A3B90095AD79 /* CCNetworkToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E54919532473A3B50095AD79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54919652473A3B80095AD79 /* LaunchScreen.storyboard in Resources */,
+				E54919622473A3B80095AD79 /* Assets.xcassets in Resources */,
+				E54919602473A3B50095AD79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54919692473A3B80095AD79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54919742473A3B90095AD79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AD527678CB8710C916BAF88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCNetworkTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45D9B30E20B2D5C9A40DF6FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCNetworkTool-CCNetworkToolUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7786C773E046F8C4C50AC2A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CCNetworkToolTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A47FAAFB0356FB611FDA4909 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCNetworkTool-CCNetworkToolUITests/Pods-CCNetworkTool-CCNetworkToolUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCNetworkTool-CCNetworkToolUITests/Pods-CCNetworkTool-CCNetworkToolUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CCNetworkTool-CCNetworkToolUITests/Pods-CCNetworkTool-CCNetworkToolUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3FB89FB82F7D03CD143D49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCNetworkTool/Pods-CCNetworkTool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCNetworkTool/Pods-CCNetworkTool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CCNetworkTool/Pods-CCNetworkTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E54919512473A3B50095AD79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54919AB2473C03C0095AD79 /* NetworkManager.swift in Sources */,
+				E549195D2473A3B50095AD79 /* ViewController.swift in Sources */,
+				E54919592473A3B50095AD79 /* AppDelegate.swift in Sources */,
+				E54919AF2473C7060095AD79 /* UITableView+initialize.swift in Sources */,
+				E54919AD2473C03C0095AD79 /* MoyaConfig.swift in Sources */,
+				E549195B2473A3B50095AD79 /* SceneDelegate.swift in Sources */,
+				E54919AC2473C03C0095AD79 /* API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54919672473A3B80095AD79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54919702473A3B90095AD79 /* CCNetworkToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54919722473A3B90095AD79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E549197B2473A3B90095AD79 /* CCNetworkToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E549196D2473A3B80095AD79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E54919542473A3B50095AD79 /* CCNetworkTool */;
+			targetProxy = E549196C2473A3B80095AD79 /* PBXContainerItemProxy */;
+		};
+		E54919782473A3B90095AD79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E54919542473A3B50095AD79 /* CCNetworkTool */;
+			targetProxy = E54919772473A3B90095AD79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E549195E2473A3B50095AD79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E549195F2473A3B50095AD79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E54919632473A3B80095AD79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E54919642473A3B80095AD79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E549197D2473A3B90095AD79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E549197E2473A3B90095AD79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E54919802473A3B90095AD79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BFD493B422365119DA84624 /* Pods-CCNetworkTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CCNetworkTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czy.CCNetworkTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E54919812473A3B90095AD79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F47AE8CE28754C937E6C5EAB /* Pods-CCNetworkTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CCNetworkTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czy.CCNetworkTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E54919832473A3B90095AD79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C005DF9A7F4FED08329B6C /* Pods-CCNetworkToolTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CCNetworkToolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czy.CCNetworkToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCNetworkTool.app/CCNetworkTool";
+			};
+			name = Debug;
+		};
+		E54919842473A3B90095AD79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE5A7A73E77A4D2A5C31855 /* Pods-CCNetworkToolTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CCNetworkToolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czy.CCNetworkToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCNetworkTool.app/CCNetworkTool";
+			};
+			name = Release;
+		};
+		E54919862473A3B90095AD79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED69BE1461E814770CA7122 /* Pods-CCNetworkTool-CCNetworkToolUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CCNetworkToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czy.CCNetworkToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CCNetworkTool;
+			};
+			name = Debug;
+		};
+		E54919872473A3B90095AD79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E1402502C73CEDED0F954A /* Pods-CCNetworkTool-CCNetworkToolUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CCNetworkToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czy.CCNetworkToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CCNetworkTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E54919502473A3B50095AD79 /* Build configuration list for PBXProject "CCNetworkTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E549197D2473A3B90095AD79 /* Debug */,
+				E549197E2473A3B90095AD79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E549197F2473A3B90095AD79 /* Build configuration list for PBXNativeTarget "CCNetworkTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E54919802473A3B90095AD79 /* Debug */,
+				E54919812473A3B90095AD79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E54919822473A3B90095AD79 /* Build configuration list for PBXNativeTarget "CCNetworkToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E54919832473A3B90095AD79 /* Debug */,
+				E54919842473A3B90095AD79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E54919852473A3B90095AD79 /* Build configuration list for PBXNativeTarget "CCNetworkToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E54919862473A3B90095AD79 /* Debug */,
+				E54919872473A3B90095AD79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E549194D2473A3B50095AD79 /* Project object */;
+}

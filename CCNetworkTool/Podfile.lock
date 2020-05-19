@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.1.0)
+  - HandyJSON (5.0.2-beta)
+  - MBProgressHUD (1.1.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - SnapKit (4.0.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - HandyJSON (~> 5.0.0-beta)
+  - MBProgressHUD (~> 1.1.0)
+  - Moya (~> 14.0.0)
+  - SnapKit (~> 4.0.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - HandyJSON
+    - MBProgressHUD
+    - Moya
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  HandyJSON: e18b035d60cb4847c609a59bb831c5db8c549663
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 35eecd7c1749f102092dc4c2331c6ba811defb9c
+
+COCOAPODS: 1.9.1
